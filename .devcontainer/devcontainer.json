@@ -1,0 +1,37 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/universal
+{
+	"name": "Laravel from Universal",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/universal:2.8.0-linux",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "cd src && cp .env.example .env && composer install && yarn install",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+		  // Add the IDs of extensions you want installed when the container is created.
+		  "extensions": [
+			"ms-azuretools.vscode-docker",
+			"eamodio.gitlens",
+			"HTMLHint.vscode-htmlhint",
+			"esbenp.prettier-vscode",
+			"p1c2u.docker-compose",
+			"formulahendry.vscode-mysql",
+			"onecentlin.laravel-extension-pack",
+			"xdebug.php-debug"
+		  ]
+		}
+	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
