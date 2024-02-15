@@ -12,7 +12,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "cd src && cp .env.example .env && composer install && yarn install",
+	"postCreateCommand": "cd src && cp .env.example .env && composer install && yarn install && php artisan key:generate",
 
 	// Configure tool-specific properties.
 	"customizations": {
