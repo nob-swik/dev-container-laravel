@@ -1,0 +1,19 @@
+services:
+  db:
+    image: mysql/mysql-server:8.0
+    environment:
+      MYSQL_DATABASE: laravel
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD_FILE: password
+      MYSQL_USER: mysqluser
+      TZ: Asia/Tokyo
+    ports:
+      - mode: host
+        protocol: tcp
+        published: 3306
+        target: 3306
+    restart: always
+    volumes:
+      - db-data:/var/lib/mysql
+volumes:
+  db-data: {}
