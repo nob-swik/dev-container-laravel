@@ -3,7 +3,7 @@
 {
 	"name": "Laravel from Universal",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/universal:2.8.0-linux",
+	"image": "mcr.microsoft.com/devcontainers/base:1-ubuntu",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -13,10 +13,10 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// コンテナ作成時の1回のみ実行される
-	"postCreateCommand": "cd src && cp .env.example .env && composer install && yarn install && php artisan key:generate",
+	// "postCreateCommand": "cd src && cp .env.example .env && composer install && yarn install && php artisan key:generate",
 
 	// コンテナ作成時に毎回実行される
-	"postStartCommand": "docker compose up db -d",
+	// "postStartCommand": "docker compose up db -d",
 
 	// Configure tool-specific properties.
 	"customizations": {
