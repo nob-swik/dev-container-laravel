@@ -13,7 +13,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// コンテナ作成時の1回のみ実行される
-	// "postCreateCommand": "cd src && cp .env.example .env && composer install && yarn install && php artisan key:generate",
+	"postCreateCommand": "cd src && cp .env.example .env && composer install && yarn install && php artisan key:generate",
 
 	// コンテナ作成時に毎回実行される
 	// "postStartCommand": "docker compose up db -d",
