@@ -22,7 +22,7 @@
 	"postCreateCommand": "cd src && cp .env.example .env && composer install && yarn install && php artisan key:generate",
 
 	// コンテナ作成時に毎回実行される
-	// "postStartCommand": "docker compose up db -d",
+	"postStartCommand": "docker compose up db -d",
 
 	// Configure tool-specific properties.
 	"customizations": {
