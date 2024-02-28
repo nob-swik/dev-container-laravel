@@ -12,3 +12,6 @@ RUN sudo apt update && sudo apt upgrade -y && \
     php composer-setup.php && \
     php -r "unlink('composer-setup.php');" && \
     sudo mv composer.phar /usr/local/bin/composer
+
+# /php/conf.d に置かれたiniファイルはphp.iniに書かれたのと同じ扱い
+COPY php-custom.ini /etc/php/8.3/cli/conf.d/
