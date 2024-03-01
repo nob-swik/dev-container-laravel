@@ -16,7 +16,7 @@
 ### base-ubuntuイメージ
 次にほぼ純粋のlinuxのbaseイメージを使った  
 PHP, Xdebug, MYSQL, Composerなどをパッケージマネージャーでインストール  
-→MYSQLとの問題は解消した  
-→Xdebugの設定が記述されていないためデバッグができない
+→MYSQLとの問題は解消  
+→Xdebugの設定が記述されていないためデバッグができない  
 →php.iniをカスタムするためにiniファイルを用意して対応  
 
