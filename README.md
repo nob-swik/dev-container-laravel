@@ -4,7 +4,7 @@
 更新があった場合はエラーになるので、Dockerfileの「php -r "if (hash_file ~」のコマンドを[公式ページ](https://getcomposer.org/download/)を見て変更する  
 - php-custom.iniの「xdebug.start_with_request=yes」はコメントアウトしている  
 デフォルトは「xdebug.start_with_request=trigger」となっていて、条件を満たしたHTTPリクエスト（トリガー）でのみxdebugが開始する  
-デバッグする場合は、GETパラメーターとして「XDEBUG_TRIGGER」を付けて、Webブラウザからアクセスする(例：localhost/hoge/?XDEBUG_TRIGGER)  
+デバッグする場合は、GETパラメーターとして「XDEBUG_TRIGGER」を付けて、Webブラウザからアクセスする(例：localhost/hoge?XDEBUG_TRIGGER)  
 もしくはコメントアウトを外してリビルド   
 
 ## 作成の経過
